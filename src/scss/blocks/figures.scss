@@ -1,0 +1,26 @@
+@use '../mixins/responsive.scss' as *;
+.card__figure {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.card__subtitle {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: 25px;
+  color: white;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.figures {
+  display: flex;
+  flex-direction: column;
+
+  @include responsive(desktop) {
+    flex-direction: row;
+  }
+}
